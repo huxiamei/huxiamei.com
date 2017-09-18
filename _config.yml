@@ -1,3 +1,11 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely need to edit after that.
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
 title: 我是美宝宝
 name: 美宝宝 
 email: 1347467979@qq.com
@@ -5,3 +13,85 @@ location: hangzhou,china # ex. Nice, France
 github_url: https://github.com/huxiamei # ex. https://github.com/DONGChuan
 cnblog_url: https://home.cnblogs.com/u/huxiamei/
 description: It's a colorful world
+
+favicon: favicon.png # Image must be in assets/images
+repository: huxiamei/huxiamei.github.io # ex. DONGChuan/DONGChuan.github.io
+
+# The base hostname & protocol for your site
+# For local test, please use http://localhost:4000
+# For production, use your github page url. ex. http://dongchuan.github.io
+url: http://huxiamei.com
+enforce_ssl: huxiamei.com
+
+## Gem
+gems:
+  - jekyll-paginate
+  - jekyll-geo-pattern
+  - rouge
+  - kramdown
+  - jekyll-github-metadata
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+lsi:         false
+excerpt_separator: "\n\n"
+
+source:      .
+destination: ./_site
+
+quiet:    false
+defaults: []
+
+kramdown:
+  input: GFM
+  enable_coderay: true
+
+# Pagination
+paginate: 10
+paginate_path: 'page:num'
+
+# Navigation. If you do not like these modules, just remove them :D
+navs:
+  -
+    href: /
+    label: Home
+
+  -
+    href: /spring-boot
+    label: Spring-Boot
+  -
+    href: /spring-cloud
+    label: Spring-Cloud
+
+#  -
+#    href: /open-source
+#    label: Open-Source
+
+  -
+    href: /blog
+    label: Archives
+
+  -
+    href: /link
+    label: Link
+    
+  -
+    href: /about
+    label: About
+
+# Sidebar to show popular repo
+side_bar_repo_limit: 6 # Number of repos to show
+
+# Google Analytics
+# analytics :
+# provider : google
+#   google :
+#     tracking_id : ''  # ex. UA-72165600-X
+
+
+# For about.html. Fell free to create your own!
+skill_software_keywords: [Java, MySQL, Oracle, Design Patterns]
+skill_j2ee_keywords: [Spring, Struct, Hibernet, MyBatis, JSP]
+skill_web_keywords: [HTML, CSS, JS, JQuery, Ajax, NodeJS, ExpressJS, MongoDB, Redis, PHP,  Boostrap]
+skill_mobile_app_keywords: [vuejs, hyhird app]
